@@ -6,7 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>mightymagicduck</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.7.7/hack.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.7.7/dark-grey.css">
   </head>
-  <body>
+  <body class="hack dark-grey">
+    <div class="container" style="margin-top:50px;">
+      <fieldset class="form-group form-success">
+        <label for="search" style="margin-left:25%;">Search:</label>
+        <input id="search" type="text" placeholder="" class="form-control">
+      </fieldset>
+
+      <table id="content">
+        <thead>
+          <tr>
+              <th>producer</th>
+              <th>title</th>
+              <th>link</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/2.6.1/fuse.min.js"></script>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
